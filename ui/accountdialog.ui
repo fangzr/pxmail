@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AccountDialog</class>
+ <widget class="QMainWindow" name="AccountDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>603</width>
+    <height>416</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>424</width>
+    <height>165</height>
+   </size>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Pxmail</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>logo.png</normaloff>logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+background-color: rgb(14, 33, 45);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>340</y>
+      <width>611</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>611</width>
+      <height>71</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="SetButton">
+     <property name="geometry">
+      <rect>
+       <x>21</x>
+       <y>11</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+/**********按钮**********/
+QPushButton{
+        border-radius: 4px;
+        border: none;
+        width: 75px;
+        height: 25px;
+}
+QPushButton:enabled {
+        background: rgb(68, 69, 73);
+        color: white;
+}
+QPushButton:!enabled {
+        background: rgb(100, 100, 100);
+        color: rgb(200, 200, 200);
+}
+QPushButton:enabled:hover{
+        background: rgb(85, 85, 85);
+}
+QPushButton:enabled:pressed{
+        background: rgb(80, 80, 80);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>手动设置</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ReturnButton">
+     <property name="geometry">
+      <rect>
+       <x>287</x>
+       <y>11</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+/**********按钮**********/
+QPushButton{
+        border-radius: 4px;
+        border: none;
+        width: 75px;
+        height: 25px;
+}
+QPushButton:enabled {
+        background: rgb(68, 69, 73);
+        color: white;
+}
+QPushButton:!enabled {
+        background: rgb(100, 100, 100);
+        color: rgb(200, 200, 200);
+}
+QPushButton:enabled:hover{
+        background: rgb(85, 85, 85);
+}
+QPushButton:enabled:pressed{
+        background: rgb(80, 80, 80);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>返回</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="loginButton">
+     <property name="geometry">
+      <rect>
+       <x>387</x>
+       <y>11</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+/**********按钮**********/
+QPushButton{
+        border-radius: 4px;
+        border: none;
+        width: 75px;
+        height: 25px;
+}
+QPushButton:enabled {
+        background: rgb(68, 69, 73);
+        color: white;
+}
+QPushButton:!enabled {
+        background: rgb(100, 100, 100);
+        color: rgb(200, 200, 200);
+}
+QPushButton:enabled:hover{
+        background: rgb(85, 85, 85);
+}
+QPushButton:enabled:pressed{
+        background: rgb(80, 80, 80);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>登录</string>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="cancelButton">
+     <property name="geometry">
+      <rect>
+       <x>487</x>
+       <y>11</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>93</width>
+       <height>28</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+/**********按钮**********/
+QPushButton{
+        border-radius: 4px;
+        border: none;
+        width: 75px;
+        height: 25px;
+}
+QPushButton:enabled {
+        background: rgb(68, 69, 73);
+        color: white;
+}
+QPushButton:!enabled {
+        background: rgb(100, 100, 100);
+        color: rgb(200, 200, 200);
+}
+QPushButton:enabled:hover{
+        background: rgb(85, 85, 85);
+}
+QPushButton:enabled:pressed{
+        background: rgb(80, 80, 80);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>取消</string>
+     </property>
+     <property name="shortcut">
+      <string>Esc</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_prompt">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>40</y>
+       <width>591</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+color:#B3B3B3;
+border:0px;
+font-family:Microsoft YaHei;
+font:13px
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_opacity">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>40</y>
+       <width>601</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>130</y>
+      <width>511</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="labeluserSet">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:#B3B3B3;
+font-family:Microsoft YaHei;
+
+}</string>
+         </property>
+         <property name="text">
+          <string>    &lt;p align=right&gt;用户名：&lt;/p&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="txtuser">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>378</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>378</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+color:#B3B3B3;
+background:#0E1015;
+border:1px solid #2F3239;
+border-radius:2px;
+selection-background-color:#787878;
+font-family:Microsoft YaHei;
+font:15px;
+}
+QLineEdit:hover{
+color:#FFF;
+background:#0E1015;
+border-color:#45494F;
+}
+QLineEdit:focus{
+color:#FFF;
+background:#0B0D11;
+border-color:#1E5F99;
+}</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="labelpasswordSet">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:#B3B3B3;
+font-family:Microsoft YaHei;
+
+}</string>
+         </property>
+         <property name="text">
+          <string>    &lt;p align=right&gt;密码：&lt;/p&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="txtpassword">
+         <property name="minimumSize">
+          <size>
+           <width>377</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>377</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+color:#B3B3B3;
+background:#0E1015;
+border:1px solid #2F3239;
+border-radius:2px;
+selection-background-color:#787878;
+font-family:Microsoft YaHei;
+font:15px;
+}
+QLineEdit:hover{
+color:#FFF;
+background:#0E1015;
+border-color:#45494F;
+}
+QLineEdit:focus{
+color:#FFF;
+background:#0B0D11;
+border-color:#1E5F99;
+}</string>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="poplabel">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:#B3B3B3;
+font-family:Microsoft YaHei;
+
+}</string>
+         </property>
+         <property name="text">
+          <string>    &lt;p align=right&gt;POP服务器：&lt;/p&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="txtpopserver">
+         <property name="minimumSize">
+          <size>
+           <width>210</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>210</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+color:#B3B3B3;
+background:#0E1015;
+border:1px solid #2F3239;
+border-radius:2px;
+selection-background-color:#787878;
+font-family:Microsoft YaHei;
+font:15px;
+}
+QLineEdit:hover{
+color:#FFF;
+background:#0E1015;
+border-color:#45494F;
+}
+QLineEdit:focus{
+color:#FFF;
+background:#0B0D11;
+border-color:#1E5F99;
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkSSLpop">
+         <property name="minimumSize">
+          <size>
+           <width>51</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>51</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QCheckBox{
+spacing:10px;
+color:#B3B3B3;
+border:0px;
+font-family:Microsoft YaHei;
+font:13px;
+}
+QCheckBox:disabled{
+color:#45494f;
+}
+QCheckBox::indicator{
+  width: 20px;
+  height: 20px;
+}
+QCheckBox::indicator:unchecked{
+  image: url(ui/images/unchecked.png);
+}
+QCheckBox::indicator:unchecked:hover{
+  image: url(ui/images/unchecked_hover.png);
+}
+QCheckBox::indicator:unchecked:pressed{
+  image: url(ui/images/unchecked_down.png);
+}
+QCheckBox::indicator:checked{
+  image: url(ui/images/checked.png);
+}
+QCheckBox::indicator:checked:hover {
+  image: url(ui/images/checked_hover.png);
+}
+QCheckBox::indicator:checked:pressed{
+  image: url(ui/images/checked_down.png);
+}
+QCheckBox::indicator:unchecked:disabled{
+  image: url(ui/images/check_disabled.png);
+}
+QCheckBox::indicator:checked:disabled{
+  image: url(ui/images/check_disabled.png);
+}</string>
+         </property>
+         <property name="text">
+          <string>SSL</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="popportlabel">
+         <property name="minimumSize">
+          <size>
+           <width>45</width>
+           <height>38</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>45</width>
+           <height>38</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:#B3B3B3;
+font-family:Microsoft YaHei;
+
+}</string>
+         </property>
+         <property name="text">
+          <string>端口：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="popportEdit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>51</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>51</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+color:#B3B3B3;
+background:#0E1015;
+border:1px solid #2F3239;
+border-radius:2px;
+selection-background-color:#787878;
+font-family:Microsoft YaHei;
+font:15px;
+}
+QLineEdit:hover{
+color:#FFF;
+background:#0E1015;
+border-color:#45494F;
+}
+QLineEdit:focus{
+color:#FFF;
+background:#0B0D11;
+border-color:#1E5F99;
+}</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="smtplabel">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:#B3B3B3;
+font-family:Microsoft YaHei;
+
+}</string>
+         </property>
+         <property name="text">
+          <string>    &lt;p align=right&gt;SMTP服务器：&lt;/p&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="txtsmtpserver">
+         <property name="minimumSize">
+          <size>
+           <width>210</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>210</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+color:#B3B3B3;
+background:#0E1015;
+border:1px solid #2F3239;
+border-radius:2px;
+selection-background-color:#787878;
+font-family:Microsoft YaHei;
+font:15px;
+}
+QLineEdit:hover{
+color:#FFF;
+background:#0E1015;
+border-color:#45494F;
+}
+QLineEdit:focus{
+color:#FFF;
+background:#0B0D11;
+border-color:#1E5F99;
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkSSLsmtp">
+         <property name="minimumSize">
+          <size>
+           <width>51</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>51</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QCheckBox{
+spacing:10px;
+color:#B3B3B3;
+border:0px;
+font-family:Microsoft YaHei;
+font:13px;
+}
+QCheckBox:disabled{
+color:#45494f;
+}
+QCheckBox::indicator{
+  width: 20px;
+  height: 20px;
+}
+QCheckBox::indicator:unchecked{
+  image: url(ui/images/unchecked.png);
+}
+QCheckBox::indicator:unchecked:hover{
+  image: url(ui/images/unchecked_hover.png);
+}
+QCheckBox::indicator:unchecked:pressed{
+  image: url(ui/images/unchecked_down.png);
+}
+QCheckBox::indicator:checked{
+  image: url(ui/images/checked.png);
+}
+QCheckBox::indicator:checked:hover {
+  image: url(ui/images/checked_hover.png);
+}
+QCheckBox::indicator:checked:pressed{
+  image: url(ui/images/checked_down.png);
+}
+QCheckBox::indicator:unchecked:disabled{
+  image: url(ui/images/check_disabled.png);
+}
+QCheckBox::indicator:checked:disabled{
+  image: url(ui/images/check_disabled.png);
+}</string>
+         </property>
+         <property name="text">
+          <string>SSL</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="smtpportlabel">
+         <property name="minimumSize">
+          <size>
+           <width>45</width>
+           <height>37</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>45</width>
+           <height>37</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:#B3B3B3;
+font-family:Microsoft YaHei;
+
+}</string>
+         </property>
+         <property name="text">
+          <string>端口：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="smtpportEdit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>51</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>51</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+color:#B3B3B3;
+background:#0E1015;
+border:1px solid #2F3239;
+border-radius:2px;
+selection-background-color:#787878;
+font-family:Microsoft YaHei;
+font:15px;
+}
+QLineEdit:hover{
+color:#FFF;
+background:#0E1015;
+border-color:#45494F;
+}
+QLineEdit:focus{
+color:#FFF;
+background:#0B0D11;
+border-color:#1E5F99;
+}</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="labellogo">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>551</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Mainlogo.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelmin">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>10</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+   color:white;
+}
+QLabel:hover{
+   background-color:rgb(255,255,255,50%);
+}</string>
+    </property>
+    <property name="text">
+     <string>一</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelclose">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>10</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+   color:white;
+}
+QLabel:hover{
+
+   background-color:red;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <zorder>labellogo</zorder>
+   <zorder>frame</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>labelmin</zorder>
+   <zorder>labelclose</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>SetButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AccountDialog</receiver>
+   <slot>showManualSet()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>66</x>
+     <y>399</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>123</x>
+     <y>327</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>loginButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AccountDialog</receiver>
+   <slot>onLogin()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>479</x>
+     <y>381</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>130</x>
+     <y>131</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cancelButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AccountDialog</receiver>
+   <slot>onCancel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>579</x>
+     <y>381</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>342</x>
+     <y>148</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ReturnButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AccountDialog</receiver>
+   <slot>hideManualSet()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>346</x>
+     <y>391</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>336</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkSSLpop</sender>
+   <signal>clicked()</signal>
+   <receiver>AccountDialog</receiver>
+   <slot>onSSLpop()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>438</x>
+     <y>258</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>386</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkSSLsmtp</sender>
+   <signal>clicked()</signal>
+   <receiver>AccountDialog</receiver>
+   <slot>onSSLsmtp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>438</x>
+     <y>307</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>412</x>
+     <y>318</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>txtuser</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>AccountDialog</receiver>
+   <slot>ontextChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>438</x>
+     <y>139</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>287</x>
+     <y>67</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>txtuser</sender>
+   <signal>editingFinished()</signal>
+   <receiver>AccountDialog</receiver>
+   <slot>txtuserEdited()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>203</x>
+     <y>149</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>230</x>
+     <y>-6</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>txtpassword</sender>
+   <signal>editingFinished()</signal>
+   <receiver>AccountDialog</receiver>
+   <slot>txtpassEdited()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>241</x>
+     <y>200</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>134</x>
+     <y>-2</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>popportEdit</sender>
+   <signal>editingFinished()</signal>
+   <receiver>AccountDialog</receiver>
+   <slot>popportEdited()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>519</x>
+     <y>243</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>482</x>
+     <y>5</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onLogin()</slot>
+  <slot>onCancel()</slot>
+  <slot>hideManualSet()</slot>
+  <slot>showManualSet()</slot>
+  <slot>onSetpopSLL()</slot>
+  <slot>onSetsmtpSSL()</slot>
+  <slot>onSSLpop()</slot>
+  <slot>onSSLsmtp()</slot>
+  <slot>ontextChanged()</slot>
+  <slot>txtuserEdited()</slot>
+  <slot>txtpassEdited()</slot>
+  <slot>popportEdited()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,24 @@
+<RCC>
+  <qresource prefix="style">
+    <file>btn_close</file>
+    <file>btn_menu1</file>
+    <file>btn_menu2</file>
+    <file>btn_menu3</file>
+    <file>btn_menu4</file>
+    <file>btn_menu5</file>
+    <file>btn_menu6</file>
+    <file>btn1</file>
+    <file>btn2</file>
+    <file>check</file>
+    <file>combobox</file>
+    <file>label</file>
+    <file>label_bg1</file>
+    <file>label_bg2</file>
+    <file>lineedit</file>
+    <file>menu</file>
+    <file>on_off</file>
+    <file>textedit</file>
+    <file>tip</file>
+    <file>vscrollbar</file>
+  </qresource>
+</RCC>

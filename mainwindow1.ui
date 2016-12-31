@@ -1,0 +1,1229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1094</width>
+    <height>826</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Pxmail</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>logo.png</normaloff>logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: rgb(68, 69, 73);</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextBesideIcon</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>40</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/*background: rgb(68, 69, 73);*/</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="1,5,20,1,1,0">
+       <property name="spacing">
+        <number>5</number>
+       </property>
+       <property name="leftMargin">
+        <number>5</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="iconlabel">
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="pixmap">
+          <pixmap>ui/logo.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#ffffff;&quot;&gt;Pxmail&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>751</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelmin">
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+   color:white;
+	border:0px;
+}
+QLabel:hover{
+   background-color:rgb(255,255,255,50%);
+}</string>
+         </property>
+         <property name="text">
+          <string>一</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelmax">
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+   color:white;
+	border:0px;
+}
+QLabel:hover{
+   background-color:rgb(255,255,255,50%);
+}</string>
+         </property>
+         <property name="text">
+          <string>口</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelclose">
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+   color:white;
+   border:0px;
+}
+QLabel:hover{
+
+   background-color:red;
+
+}</string>
+         </property>
+         <property name="text">
+          <string>X</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_2">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="2,1,2">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="composeButton">
+           <property name="minimumSize">
+            <size>
+             <width>91</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*QPushButton{
+
+border: none;
+
+}
+QPushButton:hover{
+  background-color: qconicalgradient(cx:0.5, cy:0.522909, angle:179.9, stop:0.494318 rgba(181, 225, 250, 255), stop:0.5 rgba(222, 242, 251, 255));
+
+}
+QPushButton:pressed{
+  background-color: qconicalgradient(cx:0.5, cy:0.522909, angle:179.9, stop:0.494318 rgba(134, 198, 233, 255), stop:0.5 rgba(206, 234, 248, 255));
+ 
+}
+*/</string>
+           </property>
+           <property name="text">
+            <string>写邮件</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>ui/manwindow/file.png</normaloff>ui/manwindow/file.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="refreshButton">
+           <property name="minimumSize">
+            <size>
+             <width>91</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>刷新</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>ui/manwindow/刷新.png</normaloff>ui/manwindow/刷新.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="contactlistButton">
+           <property name="minimumSize">
+            <size>
+             <width>91</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>通讯录</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>ui/manwindow/通讯录.png</normaloff>ui/manwindow/通讯录.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>205</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_3">
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="lineWidth">
+          <number>1</number>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="margin">
+           <number>5</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="searchlabel">
+            <property name="minimumSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>22</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+border:2px solid gray;
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+padding:2px 2px;
+border-right: none; 
+border-color:silver;
+
+background-color: #AAA;
+color: #000;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>ui/search24.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="searchEdit">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="sizeIncrement">
+             <size>
+              <width>0</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::ClickFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:2px solid gray;
+padding:2px 2px; 
+border-left: 0px;
+border-right:0px;
+border-color:silver;
+
+background-color: #AAA;
+    color: #000;
+
+
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>搜索邮件</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="Xlabel">
+            <property name="minimumSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+border:2px solid gray;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+padding:2px 2px;
+border-color:silver;
+border-left:none;
+
+
+background-color: #AAA;
+color: #000;
+
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+         <zorder>searchlabel</zorder>
+         <zorder>Xlabel</zorder>
+         <zorder>searchEdit</zorder>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,2,3">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QTreeWidget" name="treeMailWidget">
+        <property name="font">
+         <font>
+          <family>Lucida Fax</family>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="contextMenuPolicy">
+         <enum>Qt::CustomContextMenu</enum>
+        </property>
+        <attribute name="headerVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="headerHighlightSections">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="headerMinimumSectionSize">
+         <number>30</number>
+        </attribute>
+        <column>
+         <property name="text">
+          <string notr="true">常用文件夹</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>Adobe 宋体 Std L</family>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>Folder_Open_128px_1072492_easyicon.net.ico</normaloff>Folder_Open_128px_1072492_easyicon.net.ico</iconset>
+         </property>
+        </column>
+        <item>
+         <property name="text">
+          <string>收件夹</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Fax</family>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>ui/manwindow/email.png</normaloff>ui/manwindow/email.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>草稿夹</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Fax</family>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>ui/manwindow/template-default.png</normaloff>ui/manwindow/template-default.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>已发送</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Fax</family>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>ui/manwindow/paper_plane.png</normaloff>ui/manwindow/paper_plane.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>已删除</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Fax</family>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>ui/manwindow/删除 (1).png</normaloff>ui/manwindow/删除 (1).png</iconset>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QComboBox" name="comboBox">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <item>
+           <property name="text">
+            <string>排序：日期</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>排序：发信人</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>排序：主题</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTreeWidget" name="listEmails">
+          <property name="font">
+           <font>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::CustomContextMenu</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed</set>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>false</bool>
+          </property>
+          <property name="autoExpandDelay">
+           <number>-1</number>
+          </property>
+          <property name="expandsOnDoubleClick">
+           <bool>true</bool>
+          </property>
+          <property name="columnCount">
+           <number>1</number>
+          </property>
+          <attribute name="headerVisible">
+           <bool>false</bool>
+          </attribute>
+          <column>
+           <property name="text">
+            <string notr="true">1</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,4,20,0">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btnReply">
+            <property name="minimumSize">
+             <size>
+              <width>170</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>回复</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>ui/manwindow/回复.png</normaloff>ui/manwindow/回复.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnForward">
+            <property name="minimumSize">
+             <size>
+              <width>171</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>转发</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>ui/manwindow/转发.png</normaloff>ui/manwindow/转发.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnDelete">
+            <property name="minimumSize">
+             <size>
+              <width>170</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>删除</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>ui/manwindow/删除.png</normaloff>ui/manwindow/删除.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame">
+          <property name="minimumSize">
+           <size>
+            <width>527</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>2</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,2">
+             <item>
+              <widget class="QLabel" name="sublabel">
+               <property name="minimumSize">
+                <size>
+                 <width>165</width>
+                 <height>17</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>165</width>
+                 <height>17</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>主题：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="subdisplay">
+               <property name="minimumSize">
+                <size>
+                 <width>329</width>
+                 <height>17</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>17</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,2">
+             <item>
+              <widget class="QLabel" name="fromlabel">
+               <property name="minimumSize">
+                <size>
+                 <width>165</width>
+                 <height>17</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>165</width>
+                 <height>17</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>发信人：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="fromdisplay">
+               <property name="minimumSize">
+                <size>
+                 <width>329</width>
+                 <height>17</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>17</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="1,2">
+             <item>
+              <widget class="QLabel" name="datelabel">
+               <property name="minimumSize">
+                <size>
+                 <width>165</width>
+                 <height>17</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>165</width>
+                 <height>17</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>日期：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="datedisplay">
+               <property name="minimumSize">
+                <size>
+                 <width>329</width>
+                 <height>17</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>17</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWebView" name="emailPreview">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>470</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::CustomContextMenu</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="url">
+           <url>
+            <string>about:blank</string>
+           </url>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_attach" native="true"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+  </action>
+  <action name="actionCompose">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>send.png</normaloff>send.png</iconset>
+   </property>
+   <property name="text">
+    <string>写邮件</string>
+   </property>
+   <property name="toolTip">
+    <string>Write new eMail</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+N</string>
+   </property>
+  </action>
+  <action name="actionRefresh">
+   <property name="icon">
+    <iconset>
+     <normaloff>1refresh_128px_1194515_easyicon.net.png</normaloff>1refresh_128px_1194515_easyicon.net.png</iconset>
+   </property>
+   <property name="text">
+    <string>刷新</string>
+   </property>
+   <property name="toolTip">
+    <string>Check for new eMails</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+R</string>
+   </property>
+  </action>
+  <action name="actionContactList">
+   <property name="icon">
+    <iconset>
+     <normaloff>1point_list_128px_1190662_easyicon.net.png</normaloff>1point_list_128px_1190662_easyicon.net.png</iconset>
+   </property>
+   <property name="text">
+    <string>通讯录</string>
+   </property>
+  </action>
+  <action name="actionSearch">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>search.png</normaloff>search.png</iconset>
+   </property>
+   <property name="text">
+    <string>查找</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKit/QWebView</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resource.qrc"/>
+  <include location="styles/style.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>146</x>
+     <y>66</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnDelete</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onDelete()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1090</x>
+     <y>153</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>547</x>
+     <y>385</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnReply</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onReply()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>740</x>
+     <y>153</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>547</x>
+     <y>385</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnForward</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onForward()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>915</x>
+     <y>153</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>547</x>
+     <y>385</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treeMailWidget</sender>
+   <signal>itemClicked(QTreeWidgetItem*,int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onFolderSelected()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>157</x>
+     <y>291</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>225</x>
+     <y>-8</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>composeButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onComposeMail()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>59</x>
+     <y>55</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>480</x>
+     <y>3</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>refreshButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onRefresh()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>227</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>628</x>
+     <y>2</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>contactlistButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onContactList()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>432</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>733</x>
+     <y>1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listEmails</sender>
+   <signal>itemClicked(QTreeWidgetItem*,int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onMailSelected()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>351</x>
+     <y>600</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>377</x>
+     <y>738</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox</sender>
+   <signal>activated(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OnActivated()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>562</x>
+     <y>152</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>486</x>
+     <y>90</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>searchEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ontextChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>908</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>919</x>
+     <y>-9</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onComposeMail()</slot>
+  <slot>onRefresh()</slot>
+  <slot>onFolderSelected()</slot>
+  <slot>onMailSelected(item)</slot>
+  <slot>onContactList()</slot>
+  <slot>onSearch()</slot>
+  <slot>onReply()</slot>
+  <slot>onForward()</slot>
+  <slot>onDelete()</slot>
+  <slot>ontextEdit()</slot>
+  <slot>onMailSelected()</slot>
+  <slot>OnActivated()</slot>
+  <slot>openFile()</slot>
+  <slot>ontextChanged()</slot>
+ </slots>
+</ui>
